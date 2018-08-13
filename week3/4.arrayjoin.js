@@ -9,25 +9,32 @@ function dataHandling2 (input){
 
     switch(parseInt(tgl[1])) {
         case 1:   { namabulan="Januari"; break; }
-        case 2:   { namabulan='Februari'; break; }
-        case 3:   { namabulan='Maret'; break; }
-        case 4:   { namabulan='April'; break; }
-        case 5:   { namabulan='Mei'; break; }
-        case 6:   { namabulan='Juni'; break; }
-        case 7:   { namabulan='Juli'; break; }
-        case 8:   { namabulan='Agustus'; break; }
-        case 9:   { namabulan='September'; break; }
-        case 10:   { namabulan='Oktober'; break; }
-        case 11:   { namabulan='November'; break; }
-        case 12:   { namabulan='Desember'; break; }
+        case 2:   { namabulan="Februari"; break; }
+        case 3:   { namabulan="Maret"; break; }
+        case 4:   { namabulan="April"; break; }
+        case 5:   { namabulan="Mei"; break; }
+        case 6:   { namabulan="Juni"; break; }
+        case 7:   { namabulan="Juli"; break; }
+        case 8:   { namabulan="Agustus"; break; }
+        case 9:   { namabulan="September"; break; }
+        case 10:   { namabulan="Oktober"; break; }
+        case 11:   { namabulan="November"; break; }
+        case 12:   { namabulan="Desember"; break; }
     
       }
     console.log(input) 
     console.log(namabulan)
-    console.log([tgl[2],tgl[1],tgl[0]])
+    
+    var numTgl = [Number(tgl[0]),Number(tgl[1]),Number(tgl[2])];
+    var numTgl = numTgl.sort(function (nilai1,nilai2) {
+        return nilai1<nilai2
+    });
+
+    console.log([numTgl[0].toString(),numTgl[1].toString(),numTgl[2].toString()])
     console.log(tgl.join('-'))
     console.log(input[1].slice(0,14))
-
+    console.log("double"); 
+     console.log('single');
 }
 
 

@@ -1,21 +1,27 @@
+function dataHandling(input) {
+
+   
+
+    text = '';
+    for (i = 0; i < input.length; i++) {
+        text = 'Nomer ID: ' + input[i][0] + '\n'
+        text += 'Nama Lengkap: ' + input[i][1] + '\n'
+        text += 'TTL: ' + input[i][2] + '\n'
+        text += 'Hobi: ' + input[i][3] + '\n'
+        console.log(text)
+        text = ''
+
+    }
+
+}
+
 var input = [
     ["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"],
     ["0002", "Dika Sembiring", "Medan", "10/10/1992", "Bermain Gitar"],
     ["0003", "Winona", "Ambon", "25/12/1965", "Memasak"],
     ["0004", "Bintang Senjaya", "Martapura", "6/4/1970", "Berkebun"]
 ]
-
-text='';
-for (i = 0; i<4 ;i++){
-    text='Nomer ID: '+input[i][0] + '\n'
-    text+='Nama Lengkap: '+input[i][1] + '\n'
-    text+='TTL: '+input[i][2] + '\n'
-    text+='Hobi: '+input[i][3] + '\n'
-    console.log(text)
-    text=''
-    
-}
-
+dataHandling(input);
 
 // Nomor ID:  0001
 // Nama Lengkap:  Roman Alamsyah
