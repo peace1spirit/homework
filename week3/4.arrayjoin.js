@@ -33,8 +33,6 @@ function dataHandling2 (input){
     console.log([numTgl[0].toString(),numTgl[1].toString(),numTgl[2].toString()])
     console.log(tgl.join('-'))
     console.log(input[1].slice(0,14))
-    console.log("double"); 
-     console.log('single');
 }
 
 
