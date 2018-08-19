@@ -4,12 +4,12 @@ function dataHandling(input) {
 
     text = '';
     for (i = 0; i < input.length; i++) {
-        text = 'Nomer ID: ' + input[i][0] + '\n'
-        text += 'Nama Lengkap: ' + input[i][1] + '\n'
-        text += 'TTL: ' + input[i][2] + '\n'
-        text += 'Hobi: ' + input[i][3] + '\n'
-        console.log(text)
-        text = ''
+        text = 'Nomer ID: ' + input[i][0] + '\n';
+        text += 'Nama Lengkap: ' + input[i][1] + '\n';
+        text += 'TTL: ' + input[i][2] + ' ' + input[i][3] + '\n';
+        text += 'Hobi: ' + input[i][4] + '\n';
+        console.log(text);
+        text = '';
 
     }
 
